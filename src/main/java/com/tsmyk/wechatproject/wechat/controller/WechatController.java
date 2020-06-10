@@ -154,7 +154,7 @@ public class WechatController {
             logger.info("{} 的昵称为：{}, 城市为：{}", openId, nickname, city);
 
         } catch (WxErrorException e) {
-            logger.error("获取用户消息失败", e);
+            logger.error("获取用户消息失败:", e);
         }
     }
 }
